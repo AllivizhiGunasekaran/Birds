@@ -10,11 +10,18 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var tabBar : UITabBar!
     var window: UIWindow?
-
-
+    var soundFile: NSMutableArray!
+    var selectedCellLang : Int! = Int()
+    var pictures:NSMutableArray! = NSMutableArray()
+    var pictureDesc:NSMutableArray! = NSMutableArray()
+    var audio:NSMutableArray! = NSMutableArray()
+    var text:NSString! = NSString()
+    var image : UIImage! = UIImage()
+    var fileURL: NSURL! = NSURL()
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         // Override point for customization after application launch.
         return true
     }
